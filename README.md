@@ -8,7 +8,8 @@ CLAUDE.md, with no service and no dependencies to install.
 
 Designed and directed by Tiago Fonseca; implemented and reviewed with coding agents
 under this protocol. This is the compact edition of Warmboot;
-[Which edition?](#which-edition) compares it with Warmboot Full.
+[Which edition?](#which-edition) compares it with
+[Warmboot Full](https://github.com/korreio/warmboot-full).
 
 > **Status: experimental.** Warmboot is a collection of practices for running coding agents. It
 > makes no promise of better results. Use it at your own risk and take what is useful.
@@ -259,7 +260,8 @@ flowchart LR
 </details>
 <!-- mermaid-render:end -->
 
-Each repository owns its own evidence.
+[Warmboot Full](https://github.com/korreio/warmboot-full) has its own repository;
+each repository owns its own evidence.
 
 ## Validate this checkout
 
