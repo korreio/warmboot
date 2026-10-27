@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "name": "Warmboot",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/__pycache__": true
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "test: validate checkout",
+        "type": "shell",
+        "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v && python3 -B tools/render_mermaid_docs.py --root . --check",
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
+}

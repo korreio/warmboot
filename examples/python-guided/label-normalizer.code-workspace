@@ -1,0 +1,36 @@
+{
+  "folders": [
+    {
+      "name": "Label Normalizer",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/__pycache__": true
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "test: closing suite",
+        "type": "shell",
+        "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v",
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "smoke: cli",
+        "type": "shell",
+        "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m label_normalizer '  Warm   BOOT  '",
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
+}
