@@ -17,7 +17,8 @@ The parts shared with Warmboot Full are the same bytes in both editions: `bin/wa
 edition), the "Which edition?" text, the shared part of BOOTSTRAP's "Existing agent
 instructions", the README section headings, `tools/render_mermaid_docs.py` with
 `tests/test_render_mermaid_docs.py`, `.ruff.toml`, `.editorconfig`, `.gitattributes`,
-and `.github/SECURITY.md`, `.github/CONTRIBUTING.md` and `.github/ISSUE_TEMPLATE/`.
+and `.github/SECURITY.md`, `.github/CONTRIBUTING.md`, `.github/CODE_OF_CONDUCT.md`,
+`.github/pull_request_template.md` and `.github/ISSUE_TEMPLATE/`.
 They are aligned by hand and compared byte for byte: the core after removing its edition
 block, the rendered PNGs by hash after a clean render. The remaining differences are each
 core's edition block, Full's extra tooling and documents, and each edition's own
